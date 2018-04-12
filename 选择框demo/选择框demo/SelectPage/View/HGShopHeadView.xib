@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HGShopHeadView" customModule="使用选择页界面" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3388" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxM-at-JsE">
+                    <rect key="frame" x="155" y="57.5" width="40" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.92365759611129761" green="0.32223391532897949" blue="0.24295711517333984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faS-FD-Ysh">
+                    <rect key="frame" x="138.5" y="57.5" width="15.5" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.92365759611129761" green="0.32223391532897949" blue="0.24295711517333984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现在购买 低至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-jx-gXg">
+                    <rect key="frame" x="138.5" y="29.5" width="83.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtP-Sq-dtR">
+                    <rect key="frame" x="-0.5" y="122" width="355" height="1"/>
+                    <color key="backgroundColor" red="0.94512850046157837" green="0.94506984949111938" blue="0.94509154558181763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3Oj-7R-kME"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="faS-FD-Ysh" firstAttribute="leading" secondItem="vQh-jx-gXg" secondAttribute="leading" id="0yz-yP-VM2"/>
+                <constraint firstItem="vtP-Sq-dtR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CZB-dr-qK8"/>
+                <constraint firstItem="faS-FD-Ysh" firstAttribute="top" secondItem="vQh-jx-gXg" secondAttribute="bottom" constant="12" id="PSH-Lf-ZId"/>
+                <constraint firstAttribute="bottom" secondItem="vtP-Sq-dtR" secondAttribute="bottom" id="RpH-2C-lV8"/>
+                <constraint firstItem="vQh-jx-gXg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.015" id="XpM-39-5HW"/>
+                <constraint firstItem="vtP-Sq-dtR" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="YZk-24-6ru"/>
+                <constraint firstItem="vQh-jx-gXg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.6" id="g4Z-jP-fg8"/>
+                <constraint firstItem="UxM-at-JsE" firstAttribute="leading" secondItem="faS-FD-Ysh" secondAttribute="trailing" constant="1" id="haY-r9-NKu"/>
+                <constraint firstItem="UxM-at-JsE" firstAttribute="baseline" secondItem="faS-FD-Ysh" secondAttribute="baseline" id="sqN-Lj-vXE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="shopPriceLab" destination="UxM-at-JsE" id="0kv-kZ-QCe"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="-159.5"/>
+        </view>
+    </objects>
+</document>
